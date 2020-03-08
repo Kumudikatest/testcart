@@ -2,12 +2,11 @@ let AWS = require('aws-sdk');
 const ses = new AWS.SES();
 
 exports.handler = async (event) => {
-    //console.log(event);
+    console.log(event);
     // let name = event['Name']
     // let email = event['Email']
     // let url = event['URL'];
     let tabledetails = JSON.parse(JSON.stringify(event.Records[0].dynamodb));
-   console.log(tabledetails.NewImage.Name.S);
 
     let name = tabledetails.NewImage.Name.S;
     let email = tabledetails.NewImage.Email.S;

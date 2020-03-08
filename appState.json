@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "testsendemail.js",
         "cursor": {
-          "lineNumber": 19,
-          "column": 48
+          "lineNumber": 5,
+          "column": 5
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -51,8 +51,8 @@
         "isRemovable": true,
         "filePath": "testcreatedbhistory.js",
         "cursor": {
-          "lineNumber": 17,
-          "column": 36
+          "lineNumber": 5,
+          "column": 24
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -61,14 +61,23 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": []
+        "triggers": [],
+        "testCases": {
+          "eae16f05-854f-4ff3-99b5-97c1faffba15": {
+            "id": "eae16f05-854f-4ff3-99b5-97c1faffba15",
+            "name": "Test event",
+            "functionId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
+            "event": "{\r\n    \"Name\": \"Hasini\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=testhistory;tab=items\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       }
     },
     "openFiles": [
       "3d2b3789-5d9c-4236-b474-71c5129d0735",
       "31229ee9-0abe-426b-9ed2-cc9997e2dffd"
     ],
-    "currentFileId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
+    "currentFileId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
     "resources": {
       "ses-kumudika@adroitlogic.com": {
         "name": "ses-kumudika@adroitlogic.com",
@@ -147,7 +156,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1583688793175
+    "lastSave": 1583689444305
   },
   "VCS_STATE": {
     "provider": "GitHub",

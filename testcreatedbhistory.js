@@ -2,6 +2,7 @@ let AWS = require('aws-sdk');
 const ddb = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = async (event) => {
+    console.log(event);
     try {
         let data = await ddb.put({
             TableName: "testhistory",
