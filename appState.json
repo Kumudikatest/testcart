@@ -1,0 +1,159 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "31229ee9-0abe-426b-9ed2-cc9997e2dffd": {
+        "id": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
+        "parent": null,
+        "name": "testsendemail.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testsendemail.js",
+        "cursor": {
+          "lineNumber": 19,
+          "column": 48
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "ddbtesthistory",
+            "config": {
+              "StartingPosition": "LATEST",
+              "BatchSize": "100",
+              "StreamViewType": "NEW_IMAGE"
+            }
+          }
+        ],
+        "testCases": {
+          "f3d011bb-143c-46c5-ac41-55e14af9a004": {
+            "id": "f3d011bb-143c-46c5-ac41-55e14af9a004",
+            "name": "Test event",
+            "functionId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
+            "event": "{\r\n    \"Name\": \"Kumudika\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://www.google.lk/\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "3d2b3789-5d9c-4236-b474-71c5129d0735": {
+        "id": "3d2b3789-5d9c-4236-b474-71c5129d0735",
+        "parent": null,
+        "name": "testcreatedbhistory.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "testcreatedbhistory.js",
+        "cursor": {
+          "lineNumber": 17,
+          "column": 36
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "openFiles": [
+      "3d2b3789-5d9c-4236-b474-71c5129d0735",
+      "31229ee9-0abe-426b-9ed2-cc9997e2dffd"
+    ],
+    "currentFileId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
+    "resources": {
+      "ses-kumudika@adroitlogic.com": {
+        "name": "ses-kumudika@adroitlogic.com",
+        "type": "SES",
+        "config": {
+          "selectedIdentity": "kumudika@adroitlogic.com",
+          "projectRegion": "us-east-1"
+        }
+      },
+      "ddbtesthistory": {
+        "name": "ddbtesthistory",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 0,
+          "table": {
+            "arn": "",
+            "name": "testhistory",
+            "partitionKey": "Name",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 0
+          },
+          "isGlobalEditMode": false,
+          "parameters": {
+            "Key": {},
+            "Item": {},
+            "ExpressionAttributeValues": {}
+          },
+          "triggerParams": {
+            "StartingPosition": "LATEST",
+            "BatchSize": "100",
+            "StreamViewType": "NEW_IMAGE"
+          },
+          "validator": {
+            "validatableFields": {},
+            "validity": true
+          },
+          "valid": true
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "gtgf",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1583688793175
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "testcart",
+      "url": "https://github.com/Kumudikatest/testcart"
+    }
+  }
+}
