@@ -31,15 +31,7 @@
             }
           }
         ],
-        "testCases": {
-          "f3d011bb-143c-46c5-ac41-55e14af9a004": {
-            "id": "f3d011bb-143c-46c5-ac41-55e14af9a004",
-            "name": "Test event",
-            "functionId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
-            "event": "{\r\n    \"Name\": \"Kumudika\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://www.google.lk/\"\r\n}",
-            "eventTemplate": "hello-world"
-          }
-        }
+        "testCases": {}
       },
       "3d2b3789-5d9c-4236-b474-71c5129d0735": {
         "id": "3d2b3789-5d9c-4236-b474-71c5129d0735",
@@ -51,8 +43,8 @@
         "isRemovable": true,
         "filePath": "testcreatedbhistory.js",
         "cursor": {
-          "lineNumber": 5,
-          "column": 24
+          "lineNumber": 9,
+          "column": 5
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -92,6 +84,7 @@
         "type": "DynamoDB",
         "config": {
           "mode": 0,
+          "operation": "put",
           "table": {
             "arn": "",
             "name": "testhistory",
@@ -105,15 +98,14 @@
           },
           "isGlobalEditMode": false,
           "parameters": {
-            "Key": {},
-            "Item": {},
-            "ExpressionAttributeValues": {}
+            "TableName": "testhistory",
+            "Item": {
+              "Name": "@{name}",
+              "Email": "@{email}",
+              "URL": "@{url}"
+            }
           },
-          "triggerParams": {
-            "StartingPosition": "LATEST",
-            "BatchSize": "100",
-            "StreamViewType": "NEW_IMAGE"
-          },
+          "triggerParams": {},
           "validator": {
             "validatableFields": {},
             "validity": true
@@ -156,7 +148,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1583689444305
+    "lastSave": 1583690188831
   },
   "VCS_STATE": {
     "provider": "GitHub",

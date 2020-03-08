@@ -3,13 +3,17 @@ const ddb = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = async (event) => {
     console.log(event);
+    let name = event['Name']
+    let email = event['Email']
+    let url = event['URL']
+    
     try {
         let data = await ddb.put({
             TableName: "testhistory",
             Item: {
-                Name: "Kumudika",
-                Email: "kumudika@adroitlogic.com",
-                URL: "https://www.google.lk/"
+                Name: name,
+                Email: email,
+                URL: url
             }
         }).promise();
         console.log(data);
