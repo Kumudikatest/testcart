@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "testsendemail.js",
         "cursor": {
-          "lineNumber": 5,
-          "column": 5
+          "lineNumber": 15,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -53,7 +53,12 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": [],
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPItestdbputpost",
+            "config": {}
+          }
+        ],
         "testCases": {
           "eae16f05-854f-4ff3-99b5-97c1faffba15": {
             "id": "eae16f05-854f-4ff3-99b5-97c1faffba15",
@@ -69,7 +74,7 @@
       "3d2b3789-5d9c-4236-b474-71c5129d0735",
       "31229ee9-0abe-426b-9ed2-cc9997e2dffd"
     ],
-    "currentFileId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
+    "currentFileId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
     "resources": {
       "ses-kumudika@adroitlogic.com": {
         "name": "ses-kumudika@adroitlogic.com",
@@ -112,6 +117,37 @@
           },
           "valid": true
         }
+      },
+      "apigusEast1TestAPItestdbputpost": {
+        "name": "apigusEast1TestAPItestdbputpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 0,
+          "resourceName": "testdbput",
+          "resourcePath": "/testdbput",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "hmeir0",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -148,7 +184,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1583690500498
+    "lastSave": 1583692113853
   },
   "VCS_STATE": {
     "provider": "GitHub",
