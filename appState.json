@@ -59,7 +59,7 @@
             "id": "eae16f05-854f-4ff3-99b5-97c1faffba15",
             "name": "Test event",
             "functionId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
-            "event": "{\r\n    \"Name\": \"Hasini\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=testhistory;tab=items\"\r\n}",
+            "event": "{\r\n    \"Name\": \"Kavi\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=testhistory;tab=items\"\r\n}",
             "eventTemplate": "hello-world"
           }
         }
@@ -69,7 +69,7 @@
       "3d2b3789-5d9c-4236-b474-71c5129d0735",
       "31229ee9-0abe-426b-9ed2-cc9997e2dffd"
     ],
-    "currentFileId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
+    "currentFileId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
     "resources": {
       "ses-kumudika@adroitlogic.com": {
         "name": "ses-kumudika@adroitlogic.com",
@@ -148,7 +148,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1583690188831
+    "lastSave": 1583690500498
   },
   "VCS_STATE": {
     "provider": "GitHub",
