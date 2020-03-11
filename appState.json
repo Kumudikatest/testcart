@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "testsendemail.js",
         "cursor": {
-          "lineNumber": 15,
-          "column": 1
+          "lineNumber": 8,
+          "column": 30
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -31,7 +31,15 @@
             }
           }
         ],
-        "testCases": {}
+        "testCases": {
+          "e9268590-e14b-4988-8c20-cc0c7de06684": {
+            "id": "e9268590-e14b-4988-8c20-cc0c7de06684",
+            "name": "Test event",
+            "functionId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
+            "event": "{\r\n    \"Records\": [\r\n        {\r\n            \"eventID\": \"c4ca4238a0b923820dcc509a6f75849b\",\r\n            \"eventName\": \"INSERT\",\r\n            \"eventVersion\": \"1.1\",\r\n            \"eventSource\": \"aws:dynamodb\",\r\n            \"awsRegion\": \"us-east-1\",\r\n            \"dynamodb\": {\r\n                \"Keys\": {\r\n                    \"Name\": {\r\n                        \"S\": \"K\"\r\n                    }\r\n                },\r\n                \"NewImage\": {\r\n                    \"Name\": {\r\n                        \"S\": \"K\"\r\n                    },\r\n                    \"Email\": {\r\n                        \"S\": \"kumudika@adroitlogic.com\"\r\n                    },\r\n                    \"URL\": {\r\n                        \"S\": \"https://aws.amazon.com/sdk-for-python/\"\r\n                    }\r\n                },\r\n                \"ApproximateCreationDateTime\": 1428537600,\r\n                \"SequenceNumber\": \"4421584500000000017450439091\",\r\n                \"SizeBytes\": 26,\r\n                \"StreamViewType\": \"NEW_AND_OLD_IMAGES\"\r\n            },\r\n            \"eventSourceARN\": \"arn:aws:dynamodb:us-east-1:123456789012:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899\"\r\n        }\r\n    ]\r\n}",
+            "eventTemplate": "dynamodb-update"
+          }
+        }
       },
       "3d2b3789-5d9c-4236-b474-71c5129d0735": {
         "id": "3d2b3789-5d9c-4236-b474-71c5129d0735",
@@ -43,8 +51,8 @@
         "isRemovable": true,
         "filePath": "testcreatedbhistory.js",
         "cursor": {
-          "lineNumber": 9,
-          "column": 5
+          "lineNumber": 19,
+          "column": 55
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -64,7 +72,7 @@
             "id": "eae16f05-854f-4ff3-99b5-97c1faffba15",
             "name": "Test event",
             "functionId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
-            "event": "{\r\n    \"Name\": \"Kavi\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=testhistory;tab=items\"\r\n}",
+            "event": "{\r\n    \"Name\": \"Kumu\",\r\n    \"Email\": \"kumudika@adroitlogic.com\",\r\n    \"URL\": \"https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:selected=testhistory;tab=items\"\r\n}",
             "eventTemplate": "hello-world"
           }
         }
@@ -74,7 +82,7 @@
       "3d2b3789-5d9c-4236-b474-71c5129d0735",
       "31229ee9-0abe-426b-9ed2-cc9997e2dffd"
     ],
-    "currentFileId": "3d2b3789-5d9c-4236-b474-71c5129d0735",
+    "currentFileId": "31229ee9-0abe-426b-9ed2-cc9997e2dffd",
     "resources": {
       "ses-kumudika@adroitlogic.com": {
         "name": "ses-kumudika@adroitlogic.com",
@@ -184,7 +192,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1583692113853
+    "lastSave": 1583919740548
   },
   "VCS_STATE": {
     "provider": "GitHub",

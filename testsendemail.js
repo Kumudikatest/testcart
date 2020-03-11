@@ -3,10 +3,9 @@ const ses = new AWS.SES();
 
 exports.handler = async (event) => {
     console.log(event);
-    // let name = event['Name']
-    // let email = event['Email']
-    // let url = event['URL'];
+
     let tabledetails = JSON.parse(JSON.stringify(event.Records[0].dynamodb));
+    console.log(tabledetails)
 
     let name = tabledetails.NewImage.Name.S;
     let email = tabledetails.NewImage.Email.S;
@@ -30,11 +29,9 @@ exports.handler = async (event) => {
                 }
             }
         }).promise();
-        console.log(data);
+        return { "Email sent to": name };
 
     } catch (err) {
-        // error handling goes here
-        console.log(err);
+        return { "Email sending failed": err };
     };
-    return { "message": "Successfully executed" };
 };

@@ -16,12 +16,9 @@ exports.handler = async (event) => {
                 URL: url
             }
         }).promise();
-        console.log(data);
+        return { "A new entry is added to the table as": name }
 
     } catch (err) {
-        // error handling goes here
-        console.log(err);
+        return { "Insertion failed": err }
     };
-
-    return { "message": "Successfully executed" };
 };
