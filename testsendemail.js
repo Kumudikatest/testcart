@@ -5,7 +5,7 @@ exports.handler = async (event) => {
     console.log(event);
 
     let tabledetails = JSON.parse(JSON.stringify(event.Records[0].dynamodb));
-    console.log(tabledetails)
+    console.log(tabledetails);
 
     let name = tabledetails.NewImage.Name.S;
     let email = tabledetails.NewImage.Email.S;
