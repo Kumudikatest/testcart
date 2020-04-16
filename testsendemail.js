@@ -32,6 +32,7 @@ exports.handler = async (event) => {
         return { "Email sent to": name };
 
     } catch (err) {
+        console.log(err);
         return { "Email sending failed": err };
     };
 };

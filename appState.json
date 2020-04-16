@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "testsendemail.js",
         "cursor": {
-          "lineNumber": 8,
-          "column": 31
+          "lineNumber": 35,
+          "column": 26
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -159,7 +159,7 @@
       }
     },
     "customTemplate": {
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -192,7 +192,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1583919759769
+    "lastSave": 1587016271454
   },
   "VCS_STATE": {
     "provider": "GitHub",
